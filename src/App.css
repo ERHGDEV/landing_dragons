@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 250px;
+  width: 100%;
+  background-color: #252525;
+  text-align: center;
+  z-index: 1000;
+}
+
+.description{
+  width: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.description a{
+  color: #ffffffd9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.card {
+  min-width: 280px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.card-content table td {
+  padding: 5px 5px;
+  border-top: 1px solid #ffffff44;
+}
+
+.documentation{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.documentation table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.documentation table td {
+  padding: 5px 5px;
+  border-top: 1px solid #ffffff44;
+}
