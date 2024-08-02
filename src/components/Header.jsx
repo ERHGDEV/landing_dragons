@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header className="header">
-        <h1>API Dragons in the Song of ICe and Fire</h1>
+        <h1>API Dragons of A Song of ICe and Fire</h1>
         </header>
     )
 }
