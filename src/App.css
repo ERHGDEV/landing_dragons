@@ -37,7 +37,19 @@ header.header {
   padding-top: 10px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
   min-width: 280px;
   border: 1px solid #333;
   border-radius: 10px;
@@ -45,6 +57,7 @@ header.header {
   background-color: #333;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
   padding-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .card-image {
@@ -81,6 +94,24 @@ header.header {
   border-top: 1px solid #ffffff44;
 }
 
+.show-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffffffd9;
+  color: #252525;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.show-more:hover {
+  background-color: #555;
+  color: #ffffffd9;
+}
+
 .documentation{
   width: 100%;
   padding-top: 20px;
@@ -99,3 +130,4 @@ header.header {
   padding: 5px 5px;
   border-top: 1px solid #ffffff44;
 }
+

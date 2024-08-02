@@ -10,11 +10,16 @@ import Documentation from './components/Documentation'
 function App() {
 
   const [dragons, setDragons] = useState([])
+  const [visibleDragons, setVisibleDragons] = useState(4)
 
   useEffect(() => {
     getAll()
       .then(data => setDragons(data))
   }, [])
+
+  const showMoreDragons = () => {
+    setVisibleDragons(dragons.length)
+  }
 
   return (
     <>
@@ -23,10 +28,16 @@ function App() {
       <Description />
 
       <div className='container' >
-        {dragons.map(dragon => (
+        {dragons.slice(0, visibleDragons).map(dragon => (
           <Card key={dragon.id} {...dragon} />
         ))}
       </div>
+
+      {visibleDragons < dragons.length && (
+        <button onClick={showMoreDragons} className='show-more'>
+          Show all
+        </button>
+      )}
 
       <Documentation />
     </>
