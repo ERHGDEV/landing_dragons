@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "https://dragonsofgot-api.vercel.app/api/dragons"
+const API_URL = "https://dragons-api-eight.vercel.app/api/dragons"
 
 const getAll = () => {
     const request = axios.get(API_URL)
