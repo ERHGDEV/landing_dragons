@@ -33,12 +33,6 @@ function App() {
         ))}
       </div>
 
-      {visibleDragons < dragons.length && (
-        <button onClick={showMoreDragons} className='show-more'>
-          Show all
-        </button>
-      )}
-
       <Documentation />
     </>
   )
