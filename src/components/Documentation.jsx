@@ -7,7 +7,7 @@ const Documentation = () => {
             Each dragon has unique characteristics, including its size, color, and fire-breathing abilities. 
             This API provides detailed information about each dragon, 
             including its name, aliases, riders, and other notable features.</p>
-        <p>The base URL for the API is <strong>https://dragonsofgot-api.vercel.app/api/dragons</strong></p>
+        <p>The base URL for the API is <strong>https://dragons-api-eight.vercel.app//api/dragons</strong></p>
 
         <p>The API has two main endpoints:</p>
         <ul>
