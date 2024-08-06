@@ -12,8 +12,15 @@ header.header {
   min-width: 250px;
   width: 100%;
   background-color: #252525;
+  opacity: 0.9;
   text-align: center;
   z-index: 1000;
+}
+
+h1 {
+  font-weight: 600;
+  color: #ffffffd9;
+  padding: 0 2rem 0 2rem;
 }
 
 .description{
@@ -101,6 +108,20 @@ header.header {
   flex-direction: column;
   box-sizing: border-box;
   text-align: left;
+}
+
+a {
+  color: #ffffffd9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffffd9;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 .documentation table {
